@@ -5,3 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import csv
 
+
+file =open("menu.csv", "w")
+writer = csv.writer(file)
+writer.writerow(["name", "ingredients", "price"])
